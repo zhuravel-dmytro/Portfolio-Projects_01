@@ -23,9 +23,9 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     });
 });
 
-
 gulp.task('watch', function() {
     gulp.watch('app/less/**/*.less', gulp.parallel('less')); // Наблюдение за less файлами
+    gulp.watch('app/*.html' , browserSync.reload);
 });
 
 gulp.task('default', gulp.parallel('less', 'browser-sync', 'watch'));
