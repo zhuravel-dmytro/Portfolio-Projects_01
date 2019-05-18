@@ -122,3 +122,26 @@ body {
   top: 45%;
   left: 30%;
 }
+.block_buttom {
+  background: #282f35;
+  padding: 75px;
+  text-align: center;
+}
+.block_buttom .shope_button {
+  text-transform: uppercase;
+  padding: 18px 60px;
+  border: 1px solid #94979a;
+  background: none;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'latobold';
+  letter-spacing: 3px;
+}
+.block_buttom .shope_button:hover {
+  border: 1px solid #94979a;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-family: 'latobold';
+  letter-spacing: 3px;
+}
