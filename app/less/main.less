@@ -18,6 +18,9 @@ font-family: 'latoregular';
 html,
 body {
   overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 .wrapper{
       position: relative;
@@ -34,12 +37,12 @@ body {
     width: 100%;
     height: 800px;
 }
-.info_block{
+.info_block, .info_block3{
     padding: 115px 0 140px 0;
-.content{
-    text-align: center;
-    width: 1080px;
-    margin: 0 auto;
+    .content{
+        text-align: center;
+        width: 1080px;
+        margin: 0 auto;
     }
     .h2{
         font-family: @lb;
@@ -79,6 +82,7 @@ body {
     .box1,{
         flex: 1;
         position: relative;
+        
         .icon_logo{
             position: absolute;
             z-index: 1;
@@ -88,6 +92,7 @@ body {
     }
     .box2{
         flex: 1;
+        
         .mincontent:after{
                 content: '';
                 position: absolute;
@@ -164,8 +169,87 @@ body {
         letter-spacing: 3px;
     }
 }
+.info_block3{
+    h3{
+        color: #848789;
+        font-family: 'latoitalic';
+        padding: 33px 0;
+        font-size: 24px;
+    }
+    .form{
+        ul{
+            list-style:none;
+            padding:0;
+	        margin:0;
+        }
+    }
+    .li_email{
+        width: 400px;
+        height: 66px;
+        padding: 23px;
+        border: 1px solid #d3d7d9;
+    }
+    .li_email:focus{
+        outline: 1px solid #64c29e;
+    }
+    .li_buttom{
+        font-family: 'lato_lightregular';
+        color: #fff;
+        background: #64c29e;
+        padding: 0 35px;
+        height: 66px;
+        font-size: 21px;
+        border: none;
+    }
+    .li_buttom:hover{
+        background: #fff;
+        color: #64c29e;
+        outline: 1px solid #64c29e;
+    }
+}
+.clear{
+    padding-bottom: 250px;
+}
 
-
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #f7f7f7;
+    height: 250px;
+    padding: 100px 0;
+    .b-box{
+        text-align: center;
+        .links{
+            margin-left: 15px;
+            .vector{
+                margin-top: 10px;
+            }
+        }
+    }
+    .text{
+        text-align: left;
+        h5{
+            font-size: 16px;
+            font-family: 'latobold';
+            color: @ptxt;
+        }
+        p{
+            margin: 0;
+            font-family: 'latoitalic';
+            font-size: 14px;
+            color: @ptxt;
+        }
+    }
+    .one_p{
+        display: inline;
+        margin-right: 10px;
+        font-family: 'latoitalic';
+        font-size: 14px;
+        color: @ptxt;
+    }
+}
 
 
 
