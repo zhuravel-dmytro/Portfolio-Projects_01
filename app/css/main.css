@@ -19,9 +19,35 @@ body {
   position: relative;
   min-height: 100%;
 }
-.all-container {
+.container {
   max-width: 1150px;
   margin: 0 auto;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 30px;
+}
+.header .menu_nav {
+  display: flex;
+  align-items: center;
+  max-width: 630px;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.header a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4d4959;
+  font-family: 'latobold';
+  font-size: 13px;
+}
+.header a:hover {
+  text-decoration: none;
+  color: #64c29e;
+}
+.header .logo {
+  width: 100%;
 }
 .block_head {
   background: url(../images/Layer-7.jpg) no-repeat;
@@ -128,15 +154,41 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.gallery_1 .box1,
+.gallery_1 .box6,
+.gallery_1 .box7 {
+  position: relative;
+}
+.gallery_1 .logoinbox {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  z-index: 1;
+}
+.gallery_1 .logoinbox2 {
+  position: absolute;
+  left: 30%;
+  top: 45%;
+  z-index: 1;
+}
 .gallery_1 .box2,
 .gallery_1 .box4,
 .gallery_1 .box8 {
   padding: 59px;
   text-align: center;
 }
-.gallery_1 .box2 h4,
-.gallery_1 .box4 h4,
-.gallery_1 .box8 h4 {
+.gallery_1 .box3,
+.gallery_1 .box5,
+.gallery_1 .box9 {
+  position: relative;
+}
+.gallery_1 .bg {
+  position: absolute;
+  top: 0;
+  left: 47%;
+  z-index: 1;
+}
+.gallery_1 h4 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 18px;
@@ -144,9 +196,7 @@ body {
   font-family: 'latobold';
   padding-top: 28px;
 }
-.gallery_1 .box2 p,
-.gallery_1 .box4 p,
-.gallery_1 .box8 p {
+.gallery_1 p {
   font-size: 16px;
   color: #848789;
   text-align: justify;
@@ -233,6 +283,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.gallery_2 .a_gallery {
+  width: 100%;
+  height: 100%;
 }
 .info_block3 h3 {
   color: #848789;
