@@ -288,6 +288,39 @@ body {
   width: 100%;
   height: 100%;
 }
+.gallery_2 .all_item {
+  position: relative;
+}
+.gallery_2 .gallery_hover {
+  display: none;
+  position: absolute;
+  text-align: center;
+}
+.gallery_2 .gallery_hover a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'latobold';
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.gallery_2 .gallery_hover .image_g2 {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.gallery_2 .all_item:hover .gallery_hover {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  background: rgba(100, 194, 158, 0.8);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 20%;
+}
 .info_block3 h3 {
   color: #848789;
   font-family: 'latoitalic';

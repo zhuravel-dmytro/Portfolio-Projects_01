@@ -301,6 +301,39 @@ body {
         width: 100%;
         height: 100%;
     }
+    .all_item{
+        position: relative;
+    }
+    .gallery_hover{
+        display: none;
+        position: absolute;
+        text-align: center;
+        a{
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            font-family: 'latobold';
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+        .image_g2{
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+    }
+    .all_item:hover .gallery_hover{
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        background: rgba(100, 194, 158, 0.8);
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 20%;
+    }
 }
 
 // END GALERY BLOCK
@@ -388,26 +421,3 @@ body {
         color: @ptxt;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
