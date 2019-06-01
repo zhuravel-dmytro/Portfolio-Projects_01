@@ -9,7 +9,9 @@
     "jquery": "^3.4.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.5"
+    "browser-sync": "^2.26.5",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cssmin": "^0.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

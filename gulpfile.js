@@ -1,7 +1,8 @@
+
 var gulp = require('gulp'),
     less = require('gulp-less'),
-    browserSync = require('browser-sync'); // Подключаем Browser Sync
-    
+    browserSync = require('browser-sync'), // Подключаем Browser Sync
+    cleanCSS = require('gulp-clean-css');
 
 gulp.task('mytask', function() {
     console.log('перевірка');
@@ -23,10 +24,16 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
     });
 });
 
+ 
+// gulp.task('minify-css', () => {
+//   return gulp.src('app/css/*css')
+//     .pipe(cleanCSS({compatibility: 'ie8'}))
+//     .pipe(gulp.dest('dist'));
+// });
+
 gulp.task('watch', function() {
     gulp.watch('app/less/**/*.less', gulp.parallel('less')); // Наблюдение за less файлами
     gulp.watch('app/*.html' , browserSync.reload);
 });
 
-gulp.task('default', gulp.parallel('less', 'browser-sync', 'watch'));
-
+gulp.task('default', gulp.parallel('less', 'browser-sync', 'minify-css', 'watch'));
